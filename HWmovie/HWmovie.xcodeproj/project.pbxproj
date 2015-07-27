@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0027BD1B621788006DD295 /* PosterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027BC1B621788006DD295 /* PosterView.m */; };
+		5D0027C01B624AFA006DD295 /* PosterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027BF1B624AFA006DD295 /* PosterCollectionViewCell.m */; };
+		5D0027C31B624B6D006DD295 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027C21B624B6D006DD295 /* PosterCollectionView.m */; };
+		5D0027C61B632690006DD295 /* PosterDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027C51B632690006DD295 /* PosterDetailView.m */; };
+		5D0027C81B6326D2006DD295 /* PosterDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0027C71B6326D2006DD295 /* PosterDetailView.xib */; };
+		5D0027CB1B633E32006DD295 /* IndexCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027CA1B633E32006DD295 /* IndexCollectionView.m */; };
+		5D0027CE1B633F03006DD295 /* IndexCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0027CD1B633F03006DD295 /* IndexCollectionCell.m */; };
 		5D09F9531B5DE08F0020788C /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09F9521B5DE08F0020788C /* StarView.m */; };
 		5D09F9571B5DE99A0020788C /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09F9561B5DE99A0020788C /* UIViewExt.m */; };
 		5D09F95B1B5E1D850020788C /* newsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09F95A1B5E1D850020788C /* newsModel.m */; };
@@ -16,6 +23,7 @@
 		5D09F9661B5E53D30020788C /* TopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09F9651B5E53D30020788C /* TopModel.m */; };
 		5D09F96A1B5E553D0020788C /* TopCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09F9681B5E553D0020788C /* TopCollectionCell.m */; };
 		5D09F96B1B5E553D0020788C /* TopCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D09F9691B5E553D0020788C /* TopCollectionCell.xib */; };
+		5D1800D81B637878009A1A28 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1800D71B637878009A1A28 /* BaseCollectionView.m */; };
 		5D43004C1B60819A005D8A76 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D43004B1B60819A005D8A76 /* PhotoViewController.m */; };
 		5D43004F1B608745005D8A76 /* PhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D43004E1B608745005D8A76 /* PhotoCollectionView.m */; };
 		5D4300521B6097BC005D8A76 /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4300511B6097BC005D8A76 /* ScrollView.m */; };
@@ -223,6 +231,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D0027BB1B621788006DD295 /* PosterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterView.h; sourceTree = "<group>"; };
+		5D0027BC1B621788006DD295 /* PosterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterView.m; sourceTree = "<group>"; };
+		5D0027BE1B624AFA006DD295 /* PosterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCollectionViewCell.h; sourceTree = "<group>"; };
+		5D0027BF1B624AFA006DD295 /* PosterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCollectionViewCell.m; sourceTree = "<group>"; };
+		5D0027C11B624B6D006DD295 /* PosterCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCollectionView.h; sourceTree = "<group>"; };
+		5D0027C21B624B6D006DD295 /* PosterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCollectionView.m; sourceTree = "<group>"; };
+		5D0027C41B632690006DD295 /* PosterDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterDetailView.h; sourceTree = "<group>"; };
+		5D0027C51B632690006DD295 /* PosterDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterDetailView.m; sourceTree = "<group>"; };
+		5D0027C71B6326D2006DD295 /* PosterDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PosterDetailView.xib; sourceTree = "<group>"; };
+		5D0027C91B633E32006DD295 /* IndexCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCollectionView.h; sourceTree = "<group>"; };
+		5D0027CA1B633E32006DD295 /* IndexCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCollectionView.m; sourceTree = "<group>"; };
+		5D0027CC1B633F03006DD295 /* IndexCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCollectionCell.h; sourceTree = "<group>"; };
+		5D0027CD1B633F03006DD295 /* IndexCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCollectionCell.m; sourceTree = "<group>"; };
 		5D09F9511B5DE08F0020788C /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
 		5D09F9521B5DE08F0020788C /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
 		5D09F9551B5DE99A0020788C /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
@@ -240,6 +261,8 @@
 		5D09F9671B5E553D0020788C /* TopCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionCell.h; sourceTree = "<group>"; };
 		5D09F9681B5E553D0020788C /* TopCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionCell.m; sourceTree = "<group>"; };
 		5D09F9691B5E553D0020788C /* TopCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCollectionCell.xib; sourceTree = "<group>"; };
+		5D1800D61B637878009A1A28 /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseCollectionView.h; path = HWmovie/main/BaseCollectionView.h; sourceTree = SOURCE_ROOT; };
+		5D1800D71B637878009A1A28 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseCollectionView.m; path = HWmovie/main/BaseCollectionView.m; sourceTree = SOURCE_ROOT; };
 		5D43004A1B60819A005D8A76 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		5D43004B1B60819A005D8A76 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		5D43004D1B608745005D8A76 /* PhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionView.h; sourceTree = "<group>"; };
@@ -494,6 +517,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D0027CF1B636617006DD295 /* PosterConllectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5D0027C11B624B6D006DD295 /* PosterCollectionView.h */,
+				5D0027C21B624B6D006DD295 /* PosterCollectionView.m */,
+				5D0027BE1B624AFA006DD295 /* PosterCollectionViewCell.h */,
+				5D0027BF1B624AFA006DD295 /* PosterCollectionViewCell.m */,
+				5D0027C41B632690006DD295 /* PosterDetailView.h */,
+				5D0027C51B632690006DD295 /* PosterDetailView.m */,
+				5D0027C71B6326D2006DD295 /* PosterDetailView.xib */,
+			);
+			name = PosterConllectionView;
+			sourceTree = "<group>";
+		};
+		5D0027D01B63665D006DD295 /* IndexCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5D0027C91B633E32006DD295 /* IndexCollectionView.h */,
+				5D0027CA1B633E32006DD295 /* IndexCollectionView.m */,
+				5D0027CC1B633F03006DD295 /* IndexCollectionCell.h */,
+				5D0027CD1B633F03006DD295 /* IndexCollectionCell.m */,
+			);
+			name = IndexCollectionView;
+			sourceTree = "<group>";
+		};
 		5D09F9541B5DE99A0020788C /* UIViewExt */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,11 +683,15 @@
 		5D68C21F1B58A120009BEF7A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5D0027D01B63665D006DD295 /* IndexCollectionView */,
+				5D0027CF1B636617006DD295 /* PosterConllectionView */,
 				5DA2075C1B5CD89D006413A3 /* MovieCell.h */,
 				5DA2075D1B5CD89D006413A3 /* MovieCell.m */,
 				5DA2075E1B5CD89D006413A3 /* MovieCell.xib */,
 				5D09F9511B5DE08F0020788C /* StarView.h */,
 				5D09F9521B5DE08F0020788C /* StarView.m */,
+				5D0027BB1B621788006DD295 /* PosterView.h */,
+				5D0027BC1B621788006DD295 /* PosterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -691,6 +743,7 @@
 		5D68C2241B58A120009BEF7A /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				5D68C2261B58A120009BEF7A /* Model */,
 				5D68C2251B58A120009BEF7A /* Control */,
 				5D68C2271B58A120009BEF7A /* View */,
 			);
@@ -702,7 +755,6 @@
 			children = (
 				5D68C2371B58A1CD009BEF7A /* TopViewController.h */,
 				5D68C2381B58A1CD009BEF7A /* TopViewController.m */,
-				5D68C2261B58A120009BEF7A /* Model */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -713,8 +765,7 @@
 				5D09F9641B5E53D30020788C /* TopModel.h */,
 				5D09F9651B5E53D30020788C /* TopModel.m */,
 			);
-			name = Model;
-			path = ../Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5D68C2271B58A120009BEF7A /* View */ = {
@@ -943,6 +994,8 @@
 				5D68C35C1B58F114009BEF7A /* BaseViewController.m */,
 				5D68C35E1B58F59D009BEF7A /* BaseNavigationController.h */,
 				5D68C35F1B58F59D009BEF7A /* BaseNavigationController.m */,
+				5D1800D61B637878009A1A28 /* BaseCollectionView.h */,
+				5D1800D71B637878009A1A28 /* BaseCollectionView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1240,6 +1293,7 @@
 				5D68C3251B58A267009BEF7A /* more_search@2x.png in Resources */,
 				5D68C3201B58A267009BEF7A /* more_fav_on@2x.png in Resources */,
 				5D68C32C1B58A267009BEF7A /* more_set_on.png in Resources */,
+				5D0027C81B6326D2006DD295 /* PosterDetailView.xib in Resources */,
 				5D68C3231B58A267009BEF7A /* more_phb@2x.png in Resources */,
 				5D68C2FA1B58A267009BEF7A /* 13@2x.png in Resources */,
 				5D68C2FC1B58A267009BEF7A /* 15@2x.png in Resources */,
@@ -1351,8 +1405,10 @@
 				5D09F9531B5DE08F0020788C /* StarView.m in Sources */,
 				5D68C22A1B58A16F009BEF7A /* MyTabBarController.m in Sources */,
 				5D09F9571B5DE99A0020788C /* UIViewExt.m in Sources */,
+				5D0027CB1B633E32006DD295 /* IndexCollectionView.m in Sources */,
 				5DA207861B5CDCA7006413A3 /* SDImageCache.m in Sources */,
 				5DC838701B589A9C00CF064B /* AppDelegate.m in Sources */,
+				5D0027C01B624AFA006DD295 /* PosterCollectionViewCell.m in Sources */,
 				5DDEFEA71B5CC86600702594 /* movieModel.m in Sources */,
 				5D43004F1B608745005D8A76 /* PhotoCollectionView.m in Sources */,
 				5DF319FF1B5F785C00E2368E /* ImageViewController.m in Sources */,
@@ -1363,11 +1419,14 @@
 				5DA2078B1B5CDCA7006413A3 /* SDWebImageManager.m in Sources */,
 				5DA207891B5CDCA7006413A3 /* SDWebImageDownloader.m in Sources */,
 				5D09F95B1B5E1D850020788C /* newsModel.m in Sources */,
+				5D1800D81B637878009A1A28 /* BaseCollectionView.m in Sources */,
+				5D0027CE1B633F03006DD295 /* IndexCollectionCell.m in Sources */,
 				5DA207921B5CDCA7006413A3 /* UIImageView+WebCache.m in Sources */,
 				5DA207911B5CDCA7006413A3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				5D4300521B6097BC005D8A76 /* ScrollView.m in Sources */,
 				5DF31A021B5F795100E2368E /* imageModel.m in Sources */,
 				5DA207841B5CDCA7006413A3 /* MKAnnotationView+WebCache.m in Sources */,
+				5D0027C61B632690006DD295 /* PosterDetailView.m in Sources */,
 				5DA2078E1B5CDCA7006413A3 /* UIImage+GIF.m in Sources */,
 				5D68C2391B58A1CD009BEF7A /* TopViewController.m in Sources */,
 				5DA2078C1B5CDCA7006413A3 /* SDWebImagePrefetcher.m in Sources */,
@@ -1379,6 +1438,8 @@
 				5DA2075F1B5CD89D006413A3 /* MovieCell.m in Sources */,
 				5DF31A051B5F797E00E2368E /* ImageCollectionViewCell.m in Sources */,
 				5D09F9631B5E303C0020788C /* DataService.m in Sources */,
+				5D0027BD1B621788006DD295 /* PosterView.m in Sources */,
+				5D0027C31B624B6D006DD295 /* PosterCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

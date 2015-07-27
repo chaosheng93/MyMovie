@@ -13,6 +13,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.selectionStyle =UITableViewCellSelectionStyleNone;
     self.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_main"]];
 
 }

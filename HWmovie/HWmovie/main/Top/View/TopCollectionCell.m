@@ -12,6 +12,7 @@
 @implementation TopCollectionCell
 
 - (void)awakeFromNib {
+    
     // Initialization code
 }
 

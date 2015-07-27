@@ -68,6 +68,7 @@
 }
 
 - (void)layoutSubviews {
+    [super layoutSubviews];
    [_imageView sd_setImageWithURL:[NSURL URLWithString:_photoUrlStr]];
 }
 

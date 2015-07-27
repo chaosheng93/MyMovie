@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "PosterView.h"
 
 @interface MovieViewController : BaseViewController {
     UITableView *_movieTableView;
-    UIView *_posterView;
+    PosterView *_posterView;
     NSMutableArray *_movieModelArray;
 }
 

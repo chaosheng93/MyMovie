@@ -32,15 +32,19 @@
     layout.itemSize = self.view.bounds.size;
     //设置滑动
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    
     layout.minimumLineSpacing = 30;
+    
     _photoCollectionView = [[PhotoCollectionView alloc] initWithFrame:CGRectMake(0, 0, kwidth+30, kheight) collectionViewLayout:layout];
+    
     [self.view addSubview:_photoCollectionView];
     
     //点击第几张图片就调转到第几张
-    //NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_currentIndex inSection:0];
-    //NSLog(@"%@",indexPath);
-    //NSLog(@"index = %ld",_currentIndex);
-    //[_photoCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+//    _photoCollectionView.imageUrlArray = _imageUrlArray;
+//    
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.currentIndex inSection:0];
+//    
+//    [_photoCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
     [_photoCollectionView setContentOffset:CGPointMake((kwidth+30)*_currentIndex, 0) animated:YES];
     
 }

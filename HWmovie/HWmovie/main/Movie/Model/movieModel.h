@@ -10,6 +10,7 @@
 
 @interface movieModel : NSObject
 @property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *originalTitle;
 @property (nonatomic,copy) NSString *year;
 @property (nonatomic,retain) NSDictionary *images;
 @property (nonatomic,assign) float average;

@@ -27,20 +27,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self creatMovieTableView];
+    [self loadData];
     [self createFlipView];
     [self creatPosterView];
+
+
     _movieTableView.delegate =self;
     _movieTableView.dataSource = self;
     NSLog(@"%@",self.view.subviews);
 
 
-    [self loadData];
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -57,28 +58,13 @@
         
         movieModel *model = [[movieModel alloc] init];
         model.title = [subject objectForKey:@"title"];
+        model.originalTitle = [subject objectForKey:@"original_title"];
         model.year = [subject objectForKey:@"year"];
         model.images = [subject objectForKey:@"images"];
         NSNumber *number = [[subject objectForKey:@"rating"] objectForKey:@"average"];
         model.average = [number floatValue];
         [_movieModelArray addObject:model];
-        NSLog(@"%@",model);
-        
-        
     }
-//    for (int i = 0; i<11; i++) {
-//        NSDictionary *dicSubject = [subjects[i] objectForKey:@"subject"];
-//        NSString *title = [dicSubject objectForKey:@"title"];
-//        NSString *year = [dicSubject objectForKey:@"year"];
-//        
-//        NSDictionary *rating = [dicSubject objectForKey:@"rating"];
-//        NSNumber *average = [rating objectForKey:@"average"];
-//        
-//        NSDictionary *images = [dicSubject objectForKey:@"images"];
-//        NSURL *imageUrl = [images objectForKey:@"small"];
-//        
-//        NSLog(@"title=%@,year=%@,average=%@,imageUrl=%@",title,year,average,imageUrl);
-//    }
     
 }
 
@@ -116,12 +102,14 @@
 }
 
 - (void)creatPosterView {
-    _posterView = [[UIView alloc] initWithFrame:self.view.bounds];
-    _posterView.backgroundColor = [UIColor yellowColor];
+    _posterView = [[PosterView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_posterView];
     _posterView.hidden = YES;
+    _posterView.movieModelArray = _movieModelArray;
+    
     
 }
+
 
 
 #pragma mark - Action
@@ -182,14 +170,5 @@
 }
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
