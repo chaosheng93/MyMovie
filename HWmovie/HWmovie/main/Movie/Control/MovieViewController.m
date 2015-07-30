@@ -1,3 +1,4 @@
+
 //
 //  MovieViewController.m
 //  HWmovie
@@ -30,11 +31,10 @@
     [self loadData];
     [self createFlipView];
     [self creatPosterView];
-
-
+   
     _movieTableView.delegate =self;
     _movieTableView.dataSource = self;
-    NSLog(@"%@",self.view.subviews);
+   // NSLog(@"%@",self.view.subviews);
 
 
 
@@ -93,6 +93,7 @@
 
 - (void)creatMovieTableView {
     _movieTableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _movieTableView.backgroundColor= [UIColor clearColor];
     [self.view addSubview:_movieTableView];
     
     //注册单元格 用nib

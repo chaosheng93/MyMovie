@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MyTabBarController.h"
+#import "LauncherViewController.h"
+#import "GuideViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,10 +22,28 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    //判断沙盒里有没有某个文件
+    //有，则不是第一次安装
+    //没有，则是第一次
     
-    MyTabBarController *tabControl = [[MyTabBarController alloc ] init];
-    self.window.rootViewController = tabControl;
-    // Override point for customization after application launch.
+    NSString *homePath = NSHomeDirectory();
+    //单例方法
+    NSFileManager *manager = [NSFileManager defaultManager];
+    
+    NSString *filePath = [homePath stringByAppendingPathComponent:@"file.txt"];
+    
+    BOOL exist = [manager fileExistsAtPath:filePath];
+    
+    if (exist) {
+        LauncherViewController *launch = [[LauncherViewController alloc] init];
+        self.window.rootViewController = launch;
+
+    }else {
+        [manager createFileAtPath:filePath contents:nil attributes:nil];
+        GuideViewController *guide = [[GuideViewController alloc] init];
+        self.window.rootViewController = guide;
+
+    }
     return YES;
 }
 

@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "CinemaListModel.h"
+#import "District.h"
 
-@interface CinemaViewController :BaseViewController
+@interface CinemaViewController :BaseViewController {
+    UITableView *_tableView;
+    BOOL flags[100];
+    
+}
+
+@property (nonatomic,retain) NSMutableArray *districtModelArray;
+@property (nonatomic,retain) NSMutableArray *modelArray;
+@property (nonatomic,retain) NSMutableArray *array;
+@property (nonatomic,retain) NSMutableDictionary *dictionary;
 @end

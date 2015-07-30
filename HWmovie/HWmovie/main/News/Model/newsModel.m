@@ -12,9 +12,9 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
 //    if ([key isEqualToString:@"id"]) {
-//        NSDictionary *dic = value;
-//        _newsId = [dic objectForKey:@"id"];
-//    }
+//
+//        _newsId = value;
+    //    }
 }
 
 -(NSString *)description {

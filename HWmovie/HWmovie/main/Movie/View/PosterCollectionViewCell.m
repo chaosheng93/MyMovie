@@ -32,6 +32,7 @@
     NSBundle *bundle = [NSBundle mainBundle];
     NSArray *views = [bundle loadNibNamed:@"PosterDetailView" owner:self options:nil];
     _detailView = [views lastObject];
+    
     _detailView.frame = CGRectMake((self.width-imageWidth)/2, (self.height-imageHeight)/2, imageWidth , imageHeight);
     _detailView.hidden = YES;
     [self.contentView addSubview:_detailView];

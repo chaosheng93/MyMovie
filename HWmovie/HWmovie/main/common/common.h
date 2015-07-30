@@ -17,4 +17,9 @@
 #define  NewsListFile  @"news_list.json"
 #define Top250 @"top250.json"
 #define imageList @"image_list.json"
+#define cinemaList @"cinema_list.json"
+#define districtList @"district_list.json"
+#define commentList @"movie_comment.json"
+#define detailList @"movie_detail.json"
+
 #endif

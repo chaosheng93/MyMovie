@@ -11,6 +11,7 @@
 #import "DataService.h"
 #import "TopModel.h"
 #import "TopCollectionCell.h"
+#import "CommentViewController.h"
 
 static NSString *identifier = @"topcell";
 
@@ -49,6 +50,7 @@ static NSString *identifier = @"topcell";
     layout.itemSize = CGSizeMake((kWidth-40)/3,(kWidth-40)/3*1.5);
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _collectionView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_collectionView];
     
     _collectionView.dataSource = self;
@@ -66,12 +68,7 @@ static NSString *identifier = @"topcell";
     for (NSDictionary *dic in subjects) {
         TopModel *model = [[TopModel alloc] init];
         [model setValuesForKeysWithDictionary:dic];
-//        model.images = [dic objectForKey:@"images"];
-//        model.title = [dic objectForKey:@"title"];
-//        NSDictionary *rating = [dic objectForKey:@"rating"];
-//        model.average = [[rating objectForKey:@"average"] floatValue];
        [_modelArray addObject:model];
-      //  NSLog(@"%@",model);
     }
     
     
@@ -98,15 +95,9 @@ static NSString *identifier = @"topcell";
 }
 
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CommentViewController *vc = [[CommentViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
 
 @end

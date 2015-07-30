@@ -37,7 +37,7 @@ static NSString *identifier = @"imageCell";
 - (void)createImageView {
     //对象布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake((kWidth-50)/4, 150);
+    layout.itemSize = CGSizeMake((kWidth-50)/4, 120);
     _imageCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     
     [self.view addSubview:_imageCollectionView];

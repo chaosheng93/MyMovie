@@ -14,6 +14,7 @@
 #import "UIViewExt.h"
 #import "UIImageView+WebCache.h"
 #import "ImageViewController.h"
+#import "NewsDetailViewController.h"
 
 @interface NewsViewController () <UITableViewDataSource,UITableViewDelegate> {
     UIImageView *_headerImageView;
@@ -118,8 +119,19 @@ static NSString *identifier = @"newscell";
 
 //点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ImageViewController *imVc = [[ImageViewController alloc] init];
-    [self.navigationController pushViewController:imVc animated:YES];
+    newsModel *model = _newsModelArray[indexPath.row];
+    if (model.type==0) {
+        NewsDetailViewController *vc = [[NewsDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else {
+        ImageViewController *imVc = [[ImageViewController alloc] init];
+        [self.navigationController pushViewController:imVc animated:YES];
+
+        
+    }
+    
+    
 }
 
 #pragma  mark - Scroll

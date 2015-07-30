@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface MoreViewController : BaseViewController
+@interface MoreViewController : BaseViewController <UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate> {
+    UITableView *_tableView;
+        
+    NSArray *_images;
+    
+    NSArray *_titles;
+}
 @end
